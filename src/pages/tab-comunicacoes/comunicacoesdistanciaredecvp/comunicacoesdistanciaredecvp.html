@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Distancia aos Repetidores da Rede CVP
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <ion-list>
+    <p ion-item *ngFor="let item of itens">
+      {{ item.title }} - {{ item.distancia }}KM 
+    </p>  
+  </ion-list>
+</ion-content>

@@ -1,0 +1,146 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+p {
+    font: 12px;
+    margin: 0px;
+}
+.bc-cabecalhoTabela{
+    background-color: orange;
+}
+.bc-cabecalho2Tabela{
+    background-color: #F5DA81;
+}
+.bc-cabecalhoTabela p {
+    font-weight: bold; 
+}
+.bc-grey{
+    background-color: #CCCCCC
+}
+.bc-gold {
+    background-color: goldenrod
+}
+.bc-azulclaro {
+    background-color: deepskyblue
+}
+.bc-azulescuro {
+    background-color: #7FB3D5
+}
+.bc-pele{
+    background-color: #ffcccc
+}
+.bc-verde{
+    background-color: #009966
+}
+.bc-roxo{
+    background-color: #9966cc
+}
+.bc-salmao{
+    background-color: #ff6666
+}
+.caixa {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid;   
+}
+.flex {
+    display: flex;
+}
+.margin-bottom5 {
+    margin-bottom: 5px;
+}
+.margin-bottom10 {
+    margin-bottom: 10px;
+}
+.margin-bottom15 {
+    margin-bottom: 15px;
+}
+.margin-top5 {
+    margin-top: 5px;
+}
+.margin-top10 {
+    margin-top: 10px;
+}
+.margin-top15 {
+    margin-top: 15px;
+}
+.textcenter{
+    text-align: center;
+}
+.width100 {
+    width: 100%
+}
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+th, td {
+    display: table-cell;
+    vertical-align:middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo{
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    height: 25px;
+    padding-bottom: 10px;
+}
+
+.colunaletras {
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-weight: bold;
+
+}
+ 
+
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, 
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active, 
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated {
+    color: red;
+    border-color: red;
+}
+
+.image-view-neonatal {
+    width: 100%;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-image: url('img/socorro/neonatal.jpg');
+}

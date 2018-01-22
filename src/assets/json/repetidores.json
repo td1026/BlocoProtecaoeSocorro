@@ -1,0 +1,25 @@
+{
+    "locations": [
+        {
+            "title": "Pediatrico",
+            "canal": "15",
+            "plataforma": "2",
+            "latitude": 40.224458,
+            "longitude": -8.413344
+        },
+        {
+            "title": "CHC",
+            "canal": "15",
+            "plataforma": "2",
+            "latitude": 40.195249,
+            "longitude": -8.458753
+        },
+        {
+            "title": "HUC",
+            "canal": "15",
+            "plataforma": "2",
+            "latitude": 40.220414,
+            "longitude": -8.412684
+        }
+    ]
+}
