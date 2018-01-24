@@ -1,25 +1,9 @@
 # BlocoCVP
 
+vagrant up vagrant halt vagrant destroy -f vagrant ssh
 
-Lista de Comandos 
+vagrant ssh -c "cd /vagrant/myapp && ionic serve"
 
+vagrant ssh -c "cd /vagrant && ionic start myapp tabs" vagrant ssh -c "cd /vagrant/myapp && ionic cordova platform add android" vagrant ssh -c "cd /vagrant/myapp/platforms/android && gradle"
 
-
-vagrant up
-vagrant halt
-vagrant destroy -f
-
-vagrant ssh
-
-cd /vagrant/app
-
-ionic serve
-
-ionic platform add android
-
-ionic bulder android
-
-ionic resources
-
-
-vagrant ssh -c "cd /vagrant/app/ && ionic serve"
+vagrant ssh -c "cd /vagrant/myapp && ionic cordova build android"
