@@ -3,14 +3,9 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { MenuService } from '../services/menuservice';
+
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-import { ListaSocorrismoPage }                            from '../pages/tab-socorrismo/listasocorrismo/listasocorrismo';
-import { ListaComunicacoesPage }                        from '../pages/tab-comunicacoes/listacomunicacoes/listacomunicacoes';
-import { ListaUtilidadesPage }                            from '../pages/tab-utilidades/listautilidades/listautilidades';
-
-//import { Connectivity } from '../providers/connectivity';
-
 
 @Component({
   templateUrl: 'app.html'
@@ -20,20 +15,11 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private menuService: MenuService) {
     this.initializeApp();
-
-    // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
-      { title: 'Socorrismo', component: ListaSocorrismoPage },
-      { title: 'Comunicacoes', component: ListaComunicacoesPage },
-      { title: 'Utilidades', component: ListaUtilidadesPage }
-    ];
-
+    this.pages = this.menuService.getItems();    
   }
 
   initializeApp() {

@@ -13,9 +13,12 @@ import { Locations } from '../providers/locations';
 import { GoogleMaps } from '../providers/google-maps';
 import { Connectivity } from '../providers/connectivity';
 
+import { MenuService } from '../services/menuservice';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { ListaProtecaoCivilPage }                       from '../pages/tab-protecaocivil/listaprotecaocivil/listaprotecaocivil';
+
 import { ListaSocorrismoPage }                          from '../pages/tab-socorrismo/listasocorrismo/listasocorrismo';
 import { SocorrismoValoresPage }                        from '../pages/tab-socorrismo/socorrismovalores/socorrismovalores';
 import { SocorrismoAvaliacaoVitimaPage }                from '../pages/tab-socorrismo/socorrismoavaliacaovitima/socorrismoavaliacaovitima';
@@ -99,7 +102,14 @@ import { SocorrismoListaPsicologicasPage }              from '../pages/tab-socor
   import { SocorrismoPsicologicasDomesticaPage }        from '../pages/tab-socorrismo/socorrismopsicologicas/socorrismopsicologicasdomestica/socorrismopsicologicasdomestica';
   import { SocorrismoPsicologicasTratosPage }           from '../pages/tab-socorrismo/socorrismopsicologicas/socorrismopsicologicastratos/socorrismopsicologicastratos';
   import { SocorrismoPsicologicasViolacaoPage }         from '../pages/tab-socorrismo/socorrismopsicologicas/socorrismopsicologicasviolacao/socorrismopsicologicasviolacao';
-import { ListaComunicacoesPage }                        from '../pages/tab-comunicacoes/listacomunicacoes/listacomunicacoes';
+import { ListaFogosPage }                               from '../pages/tab-fogos/listafogos/listafogos';
+    import { ListaUrbanosPage }                         from '../pages/tab-fogos/listaurbanos/listaurbanos';
+    import { ListaNocoesPage }                          from '../pages/tab-fogos/listanocoes/listanocoes';
+    import { ListaIndustriaisPage }                     from '../pages/tab-fogos/listaindustriais/listaindustriais';
+    import { ListaFlorestaisPage }                      from '../pages/tab-fogos/listaflorestais/listaflorestais';
+import { ListaResgatePage }                             from '../pages/tab-resgate/listaresgate/listaresgate';
+
+  import { ListaComunicacoesPage }                      from '../pages/tab-comunicacoes/listacomunicacoes/listacomunicacoes';
   import { ComunicacoesRedeCVPPage }                    from '../pages/tab-comunicacoes/comunicacoesredecvp/comunicacoesredecvp';
   import { ComunicacoesMapRedeCVPPage }                 from '../pages/tab-comunicacoes/comunicacoesmapredecvp/comunicacoesmapredecvp';
   import { ComunicacoesDistanciaRedeCVPPage }           from '../pages/tab-comunicacoes/comunicacoesdistanciaredecvp/comunicacoesdistanciaredecvp';
@@ -123,15 +133,15 @@ import { ListaUtilidadesPage }                          from '../pages/tab-utili
   import { UtilidadesInsigniasCVPPage }                 from '../pages/tab-utilidades/utilidadesinsignias/utilidadesinsigniascvp/utilidadesinsigniascvp';
   import { UtilidadesPerigosasPage }                    from '../pages/tab-utilidades/utilidadesperigosas/utilidadesperigosas';
   import { UtilidadesColapsadasPage }                   from '../pages/tab-utilidades/utilidadescolapsadas/utilidadescolapsadas';
-  import { UtilidadesMedidasPage }                       from '../pages/tab-utilidades/utilidadesmedidas/utilidadesmedidas';
-  import { UtilidadesConversoresPage }                   from '../pages/tab-utilidades/utilidadesconversores/utilidadesconversores';
-
+  import { UtilidadesMedidasPage }                      from '../pages/tab-utilidades/utilidadesmedidas/utilidadesmedidas';
+  import { UtilidadesConversoresPage }                  from '../pages/tab-utilidades/utilidadesconversores/utilidadesconversores';
+  import { UtilidadesBombeirosPage }                    from '../pages/tab-utilidades/utilidadesbombeiros/utilidadesbombeiros';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
+    ListaProtecaoCivilPage,
     ListaSocorrismoPage,
     SocorrismoValoresPage,
     SocorrismoAvaliacaoVitimaPage,
@@ -215,6 +225,12 @@ import { ListaUtilidadesPage }                          from '../pages/tab-utili
     SocorrismoPsicologicasDomesticaPage,
     SocorrismoPsicologicasTratosPage,
     SocorrismoPsicologicasViolacaoPage,
+    ListaFogosPage,
+    ListaUrbanosPage,
+    ListaNocoesPage,
+    ListaIndustriaisPage,
+    ListaFlorestaisPage,
+    ListaResgatePage,
     ListaComunicacoesPage,
     ComunicacoesRedeCVPPage,
     ComunicacoesMapRedeCVPPage,
@@ -240,7 +256,8 @@ import { ListaUtilidadesPage }                          from '../pages/tab-utili
     UtilidadesPerigosasPage,
     UtilidadesColapsadasPage,
     UtilidadesMedidasPage,
-    UtilidadesConversoresPage 
+    UtilidadesConversoresPage,
+    UtilidadesBombeirosPage
   ],
   imports: [
     HttpModule,
@@ -251,7 +268,7 @@ import { ListaUtilidadesPage }                          from '../pages/tab-utili
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
+    ListaProtecaoCivilPage,
     ListaSocorrismoPage,
     SocorrismoValoresPage,
     SocorrismoAvaliacaoVitimaPage,
@@ -335,6 +352,12 @@ import { ListaUtilidadesPage }                          from '../pages/tab-utili
     SocorrismoPsicologicasDomesticaPage,
     SocorrismoPsicologicasTratosPage,
     SocorrismoPsicologicasViolacaoPage,
+    ListaFogosPage,
+    ListaUrbanosPage,
+    ListaNocoesPage,
+    ListaIndustriaisPage,
+    ListaFlorestaisPage,
+    ListaResgatePage,
     ListaComunicacoesPage,
     ComunicacoesRedeCVPPage,
     ComunicacoesMapRedeCVPPage,
@@ -360,7 +383,8 @@ import { ListaUtilidadesPage }                          from '../pages/tab-utili
     UtilidadesPerigosasPage,
     UtilidadesColapsadasPage,
     UtilidadesMedidasPage,
-    UtilidadesConversoresPage
+    UtilidadesConversoresPage,
+    UtilidadesBombeirosPage
   ],
   providers: [
     StatusBar,
@@ -370,6 +394,7 @@ import { ListaUtilidadesPage }                          from '../pages/tab-utili
     Locations, 
     GoogleMaps, 
     Connectivity,
+    MenuService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

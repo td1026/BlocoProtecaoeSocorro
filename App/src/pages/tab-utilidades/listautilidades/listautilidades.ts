@@ -6,6 +6,7 @@ import { UtilidadesPerigosasPage } from '../utilidadesperigosas/utilidadesperigo
 import { UtilidadesColapsadasPage } from '../utilidadescolapsadas/utilidadescolapsadas';
 import { UtilidadesMedidasPage } from '../utilidadesmedidas/utilidadesmedidas';
 import { UtilidadesConversoresPage } from '../utilidadesconversores/utilidadesconversores';
+import { UtilidadesBombeirosPage } from '../utilidadesbombeiros/utilidadesbombeiros';
 
 
 
@@ -24,33 +25,33 @@ export class ListaUtilidadesPage {
             {
                 'title': 'Insígnias',
                 'class': UtilidadesListaInsigniasPage,
-                'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
                 'icon': '#E63135'
             },
             {
                 'title': 'Materias Perigosas',
                 'class': UtilidadesPerigosasPage,
-                'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
                 'icon': '#E63135'
             },
             {
                 'title': 'Estruturas Colapsadas',
                 'class': UtilidadesColapsadasPage,
-                'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
                 'icon': '#E63135'
             },
             {
                 'title': 'Medidas Universais',
                 'class': UtilidadesMedidasPage,
-                'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
                 'icon': '#E63135'
             },
             {
                 'title': 'Conversores',
                 'class': UtilidadesConversoresPage,
-                'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
                 'icon': '#E63135'
             },
+            {
+                'title': 'Bombeiros',
+                'class': UtilidadesBombeirosPage,
+                'icon': '#E63135'
+            }
         ];
     }
 

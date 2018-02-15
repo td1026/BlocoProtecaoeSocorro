@@ -1,12 +1,22 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>CVP Coimbra</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>HOME</ion-title>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title></ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <img src="assets/img/fundo5.jpg">
+<ion-content>
+    <ion-list>
+        <ion-item-sliding *ngFor="let item of items" [navPush]="item.component">
+            <button ion-item>
+                <ion-avatar item-start>
+                    <img [src]="item.icon" />
+                </ion-avatar>
+                <h2>{{item.title}}</h2>
+            </button>
+        </ion-item-sliding>
+    </ion-list>
 </ion-content>
